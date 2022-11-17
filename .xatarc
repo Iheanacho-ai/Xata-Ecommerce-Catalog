@@ -1,0 +1,8 @@
+{
+  "databaseURL": "https://Amarachi-Iheanacho-s-workspace-u3bis1.us-east-1.xata.sh/db/product-catalog",
+  "codegen": {
+    "output": "src/xata.js",
+    "moduleType": "esm",
+    "declarations": true
+  }
+}

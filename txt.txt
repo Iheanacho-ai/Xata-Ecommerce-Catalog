@@ -1,0 +1,26 @@
+    const submitProduct = () => {
+    fetch('/api/add-product', {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json'
+      },
+      body: JSON.stringify({
+        "productName": productName,
+        "productPrice": productPrice,
+        "productURL": productImageURL
+      })
+    }).then(() => window.location.reload())
+  }
+
+  const deleteProduct = (id) => {
+    fetch("/api/delete-product", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify({ id: id }),
+    }).then(() => {
+      window.location.reload();
+    });
+  }
+  

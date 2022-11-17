@@ -1,3 +1,7 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 html,
 body {
   padding: 0;
@@ -14,6 +18,12 @@ a {
 * {
   box-sizing: border-box;
 }
+
+.product-container{
+  margin-left: 37%;
+  width: 30%;
+}
+
 
 @media (prefers-color-scheme: dark) {
   html {

@@ -1,5 +1,7 @@
-import { NextApiHandler } from "next";
-import { xata } from "../../util/xataClient";
+import { getXataClient } from '../../src/xata';
+
+
+const xata = getXataClient();
 
 const handler = async (req, res) => {
   const { id } = req.body;

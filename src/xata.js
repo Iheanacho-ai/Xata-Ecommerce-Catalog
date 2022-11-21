@@ -22,7 +22,7 @@ const defaultOptions = {
 /** @extends DatabaseClient<DatabaseSchema> */
 export class XataClient extends DatabaseClient {
   constructor(options) {
-    super({ ...defaultOptions, ...options }, tables);
+    super({ ...defaultOptions, ...options}, tables);
   }
 }
 let instance = undefined;

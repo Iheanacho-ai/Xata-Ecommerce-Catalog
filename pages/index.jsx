@@ -36,6 +36,8 @@ const Home = ({products}) => {
       })
     }).then(() => {
       window.location.reload()
+    }).catch((error)=> {
+      console.log(error)
     });
   }
 
@@ -48,6 +50,8 @@ const Home = ({products}) => {
       body: JSON.stringify({ id }),
     }).then(() => {
       window.location.reload();
+    }).catch((error)=> {
+      console.log(error)
     });
   }
   return (
@@ -65,8 +69,8 @@ const Home = ({products}) => {
                 </label>
                 <div className="mt-1">
                   <textarea
-                    id="about"
-                    name="about"
+                    id="productName"
+                    name="productName"
                     rows={1}
                     value= {productName}
                     onChange = {(e)=> setProductName(e.target.value)}
@@ -86,8 +90,8 @@ const Home = ({products}) => {
                   {/* productPrice variable goes here */}
                   <input
                     type="text"
-                    name="price"
-                    id="price"
+                    name="productPrice"
+                    id="productPrice"
                     value= {productPrice}
                     onChange = {(e)=> setProductPrice(e.target.value)}
                     className="focus:ring-indigo-500 focus:border-indigo-500 block w-full pl-7 pr-12 sm:text-sm border-gray-300 rounded-md"
